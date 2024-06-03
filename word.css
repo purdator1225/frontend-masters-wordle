@@ -1,0 +1,49 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.correct {
+  background-color: green;
+}
+
+.close {
+  background-color: yellow;
+}
+
+.wrong {
+  background-color: red;
+}
+
+.wordle-wrapper {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  max-width: 400px;
+  gap: 20px;
+}
+
+.scoreboard-letter {
+  border: 5px solid gray;
+  height: 40px;
+  width: 40px;
+  margin-right: 20px;
+  display: flex;
+  font-size: 35px;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.game-wrapper {
+  max-width: 500px;
+  margin: auto;
+}
+
+.info-bar {
+  visibility: hidden;
+}
+
+.show {
+  visibility: visible;
+}
